@@ -8,7 +8,7 @@ import type { OpenClawConfig } from "../../../config/config.js";
  * Set to 0 to disable (never timeout).
  * Default: 1 hour.
  */
-export const DEFAULT_LLM_IDLE_TIMEOUT_MS = 360_000_000;
+export const DEFAULT_LLM_IDLE_TIMEOUT_MS = 60 * 60 * 1000;
 
 /**
  * Maximum safe timeout value (approximately 24.8 days).
