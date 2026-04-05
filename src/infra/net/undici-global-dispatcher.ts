@@ -3,9 +3,9 @@ import { Agent, EnvHttpProxyAgent, getGlobalDispatcher, setGlobalDispatcher } fr
 import { isWSL2Sync } from "../wsl.js";
 import { hasEnvHttpProxyConfigured } from "./proxy-env.js";
 
-export const DEFAULT_UNDICI_STREAM_TIMEOUT_MS = 30 * 60 * 1000;
+export const DEFAULT_UNDICI_STREAM_TIMEOUT_MS = 60 * 60 * 1000;
 
-const AUTO_SELECT_FAMILY_ATTEMPT_TIMEOUT_MS = 300;
+const AUTO_SELECT_FAMILY_ATTEMPT_TIMEOUT_MS = 600;
 
 let lastAppliedTimeoutKey: string | null = null;
 let lastAppliedProxyBootstrap = false;
