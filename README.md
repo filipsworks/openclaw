@@ -1,3 +1,6 @@
+Fork fixing the dozen layers of timeouts for use with local LLMs.
+Generally the timeouts are swapped for 1hr to first token and network timeouts are doubled.
+
 # 🦞 OpenClaw — Personal AI Assistant
 
 <p align="center">
