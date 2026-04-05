@@ -40,9 +40,9 @@ const FAILURE_REASON_ORDER = new Map<AuthProfileFailureReason, number>(
 );
 
 const WHAM_USAGE_URL = "https://chatgpt.com/backend-api/wham/usage";
-const WHAM_TIMEOUT_MS = 3_000;
-const WHAM_BURST_COOLDOWN_MS = 15_000;
-const WHAM_PROBE_FAILURE_COOLDOWN_MS = 30_000;
+const WHAM_TIMEOUT_MS = 120_000;
+const WHAM_BURST_COOLDOWN_MS = 120_000;
+const WHAM_PROBE_FAILURE_COOLDOWN_MS = 120_000;
 const WHAM_HTTP_ERROR_COOLDOWN_MS = 5 * 60 * 1000;
 const WHAM_TOKEN_EXPIRED_COOLDOWN_MS = 12 * 60 * 60 * 1000;
 const WHAM_DEAD_ACCOUNT_COOLDOWN_MS = 24 * 60 * 60 * 1000;
